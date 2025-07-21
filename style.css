@@ -1,0 +1,138 @@
+/* General Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #008080;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #006666;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: #ccc;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem;
+}
+
+.btn {
+  background-color: #008080;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #006666;
+}
+
+.contact-btn {
+  background-color: #004d4d;
+}
+
+.contact-btn:hover {
+  background-color: #003f3f;
+}
+
+/* About Section */
+#about {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+/* Main Page Content */
+main {
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.back-to-top {
+  color: #008080;
+  font-weight: bold;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin: 0.5rem;
+  }
+}
